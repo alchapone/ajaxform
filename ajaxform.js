@@ -69,6 +69,7 @@
               }
               return _this.settings.onSuccess(json);
             } else {
+              _this.settings.onErrors(json);
               return _this.applyErrors(json.errors);
             }
           },
